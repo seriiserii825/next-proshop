@@ -14,3 +14,10 @@ a {
 * {
   box-sizing: border-box;
 }
+
+main {
+  min-height: 120vh;
+}
+.ml-auto {
+  margin-left: auto;
+}
