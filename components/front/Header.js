@@ -1,29 +1,29 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCartPlus } from "@fortawesome/free-solid-svg-icons";
-import { faUser } from "@fortawesome/free-solid-svg-icons";
-import { Navbar, Container, NavDropdown, Nav } from "react-bootstrap";
+import { faCartPlus, faUser } from "@fortawesome/free-solid-svg-icons";
+import { Router, useRouter } from "next/router";
+import Link from "next/link";
+import styles from "./Header.module.css";
 
 const Header = () => {
+  const router = useRouter();
   return (
-    <header>
-      <Navbar bg="dark" variant="dark" fixed="top" collapseOnSelect expand="lg">
-        <Container>
-          <Navbar.Brand href="#home">ProShop</Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="ml-auto">
-              <Nav.Link href="#home">
-                <FontAwesomeIcon icon={faCartPlus} />
-                <span>Cart</span>
-              </Nav.Link>
-              <Nav.Link href="#link">
-                <FontAwesomeIcon icon={faUser} />
-              </Nav.Link>
-            </Nav>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>
+    <header className={styles.header}>
+      {router.pathname === "/" ? <h1>ProShop</h1> : <Link href="/"><a><h1>ProShop</h1></a></Link>}
+      <div className={styles.menu}>
+        <Link href="/cart">
+          <a className={styles.item}>
+            <FontAwesomeIcon icon={faCartPlus}/>
+            <span>Cart</span>
+          </a>
+        </Link>
+        <Link href="/login">
+          <a className={styles.item}>
+            <FontAwesomeIcon icon={faUser}/>
+            <span>Sign in</span>
+          </a>
+        </Link>
+      </div>
     </header>
   );
 };

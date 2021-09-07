@@ -1,0 +1,28 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    color: white;
+    background-color: var(--accent);
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    width: 6rem;
+    opacity: 0.6;
+    transition: all .4s;
+}
+.item:hover {
+    opacity: 1;
+}
+.item svg {
+    margin-right: 10px;
+    flex: 0 0 20px;
+}
