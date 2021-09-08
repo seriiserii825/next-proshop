@@ -1,0 +1,37 @@
+.product {
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    transition: all .4s;
+}
+
+.product:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .2);
+}
+
+.image {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.body {
+    padding: 1rem;
+}
+
+.title {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    min-height: 5rem;
+}
+
+.data {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.price {
+    font-size: 4rem;
+    font-weight: bold;
+}
