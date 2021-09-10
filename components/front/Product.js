@@ -16,9 +16,6 @@ function Product({ name, image, _id, price, rating, numReviews }) {
           <div className={styles.body}>
             <h3 className={styles.title}>{name}</h3>
             <Rating rating={rating} text={numReviews}/>
-            {/*<div className={styles.data}>*/}
-            {/*  <span>{rating} from {numReviews} reviews</span>*/}
-            {/*</div>*/}
             <div className={styles.price}>${price}</div>
           </div>
         </a>
