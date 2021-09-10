@@ -12,7 +12,7 @@ const SingleProduct = () => {
 export async function getServerSideProps(context) {
   try {
     const products = await axios(`${process.env.NEXT_PUBLIC_BASE_URL}/api/products`);
-    console.log(products.data, 'products');
+    // console.log(products.data, 'products');
 
   } catch (e) {
     console.log(e, 'e')
