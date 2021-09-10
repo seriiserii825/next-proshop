@@ -9,17 +9,25 @@ const Header = () => {
   const router = useRouter();
   return (
     <header className={styles.header}>
-      {router.pathname === "/" ? <h1>ProShop</h1> : <Link href="/"><a><h1>ProShop</h1></a></Link>}
+      {router.pathname === "/" ? (
+        <h1>ProShop</h1>
+      ) : (
+        <Link href="/">
+          <a>
+            <h1>ProShop</h1>
+          </a>
+        </Link>
+      )}
       <div className={styles.menu}>
         <Link href="/cart">
           <a className={styles.item}>
-            <FontAwesomeIcon icon={faCartPlus}/>
+            <FontAwesomeIcon icon={faCartPlus} />
             <span>Cart</span>
           </a>
         </Link>
         <Link href="/login">
           <a className={styles.item}>
-            <FontAwesomeIcon icon={faUser}/>
+            <FontAwesomeIcon icon={faUser} />
             <span>Sign in</span>
           </a>
         </Link>

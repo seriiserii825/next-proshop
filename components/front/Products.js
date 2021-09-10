@@ -1,6 +1,6 @@
 import React from "react";
-import styles from "./products.module.css";
 import Product from "./Product";
+import styles from "./products.module.css";
 
 function Products({ products }) {
   return (
@@ -16,6 +16,5 @@ function Products({ products }) {
     </>
   );
 }
-
 
 export default Products;
