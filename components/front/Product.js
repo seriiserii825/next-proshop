@@ -5,7 +5,6 @@ import Link from "next/link";
 import Rating from "../Rating";
 
 function Product({ name, image, _id, price, rating, numReviews }) {
-  console.log(rating, 'rating product');
   return (
     <div className={styles.product}>
       <Link href={`/product/${_id}`}>

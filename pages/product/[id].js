@@ -6,7 +6,6 @@ import Rating from "../../components/Rating";
 import { Button } from "antd";
 
 const SingleProduct = ({ product }) => {
-  console.log(product, 'product')
   const { name, image, rating, numReviews, price, description, countInStock } = product;
   return (
     <div className={'container'}>

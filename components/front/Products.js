@@ -1,9 +1,8 @@
 import React from "react";
 import styles from "./products.module.css";
-import products from "../../data/products";
 import Product from "./Product";
 
-function Products() {
+function Products({ products }) {
   return (
     <>
       <h2 className="title">Latest products</h2>
@@ -17,5 +16,6 @@ function Products() {
     </>
   );
 }
+
 
 export default Products;

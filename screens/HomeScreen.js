@@ -1,10 +1,10 @@
 import React from 'react';
 import Products from "../components/front/Products";
 
-function HomeScreen(props) {
+function HomeScreen({ products }) {
   return (
     <div className={'container'}>
-      <Products/>
+      <Products products={products}/>
     </div>
   );
 }
