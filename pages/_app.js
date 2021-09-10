@@ -1,3 +1,5 @@
+import "reset-css/reset.css";
+import "antd/dist/antd.css";
 import "../styles/globals.css";
 import Header from "../components/front/Header";
 import Footer from "../components/front/Footer";

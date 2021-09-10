@@ -1,9 +1,9 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartPlus, faUser } from "@fortawesome/free-solid-svg-icons";
-import { Router, useRouter } from "next/router";
+import { useRouter } from "next/router";
 import Link from "next/link";
-import styles from "./Header.module.css";
+import styles from "./Header.module.scss";
 
 const Header = () => {
   const router = useRouter();

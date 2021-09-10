@@ -2,8 +2,10 @@ import React from 'react';
 import styles from "./product.module.css";
 import Image from "next/image";
 import Link from "next/link";
+import Rating from "../Rating";
 
 function Product({ name, image, _id, price, rating, numReviews }) {
+  console.log(rating, 'rating product');
   return (
     <div className={styles.product}>
       <Link href={`/product/${_id}`}>
@@ -13,9 +15,10 @@ function Product({ name, image, _id, price, rating, numReviews }) {
           </div>
           <div className={styles.body}>
             <h3 className={styles.title}>{name}</h3>
-            <div className={styles.data}>
-              <span>{rating} from {numReviews} reviews</span>
-            </div>
+            <Rating rating={rating} text={numReviews}/>
+            {/*<div className={styles.data}>*/}
+            {/*  <span>{rating} from {numReviews} reviews</span>*/}
+            {/*</div>*/}
             <div className={styles.price}>${price}</div>
           </div>
         </a>

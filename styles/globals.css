@@ -1,5 +1,6 @@
 :root {
     --accent: #333;
+    --yellow: #ffd666;
 }
 
 html {
@@ -120,6 +121,10 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    color: inherit;
+}
+
 @media screen and (max-width: 400px) {
     .img-responsive.img--desktop {
         display: none !important;
@@ -151,4 +156,11 @@ main {
     margin-bottom: 2rem;
     font-size: 3rem;
     text-transform: uppercase;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: initial;
+    margin-bottom: initial;
+    color: initial;
+    font-weight: initial
 }
